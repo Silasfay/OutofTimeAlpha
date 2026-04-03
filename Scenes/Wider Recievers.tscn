@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0gubvgqywefh"]
+
+[ext_resource type="Script" path="res://Scripts/Button Scripts/wider_recievers.gd" id="1_dmcha"]
+
+[node name="WiderRecievers" type="Button"]
+alignment = 0
+script = ExtResource("1_dmcha")

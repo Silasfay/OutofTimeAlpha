@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyehy8pigsath"]
+
+[ext_resource type="Script" path="res://Patch.gd" id="1_dqv5u"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+alignment = 0
+script = ExtResource("1_dqv5u")

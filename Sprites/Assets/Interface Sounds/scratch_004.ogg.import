@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmqfglew0o4ow"
+path="res://.godot/imported/scratch_004.ogg-8f2dcda77627fd074c225c9f274d79c1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sprites/Assets/Interface Sounds/scratch_004.ogg"
+dest_files=["res://.godot/imported/scratch_004.ogg-8f2dcda77627fd074c225c9f274d79c1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

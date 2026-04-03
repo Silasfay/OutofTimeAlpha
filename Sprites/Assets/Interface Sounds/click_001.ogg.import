@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bv5qepts0a445"
+path="res://.godot/imported/click_001.ogg-75879cd988b57d3bd08f404a4789dff2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sprites/Assets/Interface Sounds/click_001.ogg"
+dest_files=["res://.godot/imported/click_001.ogg-75879cd988b57d3bd08f404a4789dff2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

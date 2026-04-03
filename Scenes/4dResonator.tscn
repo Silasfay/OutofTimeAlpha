@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpjaj2ywsuft7"]
+
+[ext_resource type="Script" path="res://Scripts/Button Scripts/4dResonance.gd" id="1_0hejg"]
+[ext_resource type="ButtonGroup" uid="uid://cu8bmae4r5ebx" path="res://Scenes/ItemButton.tres" id="1_81bag"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+button_group = ExtResource("1_81bag")
+alignment = 0
+script = ExtResource("1_0hejg")

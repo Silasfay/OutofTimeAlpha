@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c1f2emecc5dm0"
+path="res://.godot/imported/424421__timbre__airy-mix-of-excerpt-of-eardeers-freesound-424277.wav-fe0f771ddf601fac8b99c032adb7abcb.sample"
+
+[deps]
+
+source_file="res://Sprites/Assets/Interface Sounds/424421__timbre__airy-mix-of-excerpt-of-eardeers-freesound-424277.wav"
+dest_files=["res://.godot/imported/424421__timbre__airy-mix-of-excerpt-of-eardeers-freesound-424277.wav-fe0f771ddf601fac8b99c032adb7abcb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

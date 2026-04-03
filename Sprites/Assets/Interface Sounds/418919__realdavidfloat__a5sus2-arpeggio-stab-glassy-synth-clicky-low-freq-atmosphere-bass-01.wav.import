@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtcpl8exnm3du"
+path="res://.godot/imported/418919__realdavidfloat__a5sus2-arpeggio-stab-glassy-synth-clicky-low-freq-atmosphere-bass-01.wav-90636e6157fbe5e0146fe55642e11ffa.sample"
+
+[deps]
+
+source_file="res://Sprites/Assets/Interface Sounds/418919__realdavidfloat__a5sus2-arpeggio-stab-glassy-synth-clicky-low-freq-atmosphere-bass-01.wav"
+dest_files=["res://.godot/imported/418919__realdavidfloat__a5sus2-arpeggio-stab-glassy-synth-clicky-low-freq-atmosphere-bass-01.wav-90636e6157fbe5e0146fe55642e11ffa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

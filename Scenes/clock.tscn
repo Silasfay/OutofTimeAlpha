@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://4rlgba2cudgo"]
+[gd_scene load_steps=12 format=3 uid="uid://4rlgba2cudgo"]
 
 [ext_resource type="PackedScene" uid="uid://bow4w8rbjshn4" path="res://Scenes/QTEZone.tscn" id="1_5qqk5"]
 [ext_resource type="Script" path="res://Scripts/clock.gd" id="1_jlktk"]
 [ext_resource type="PackedScene" uid="uid://b4q4s8jwktshb" path="res://Scenes/Arms.tscn" id="2_86yty"]
-[ext_resource type="Script" path="res://Scripts/TestArea.gd" id="3_71tfd"]
-[ext_resource type="Texture2D" uid="uid://t2wnwg8m3yrg" path="res://Sprites/th-52991756.jpg" id="4_8d2lb"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iltv7"]
-size = Vector2(212, 45)
+[ext_resource type="Texture2D" uid="uid://dvoy24fr0gpv0" path="res://Sprites/Assets/ClockBG.png" id="2_ning0"]
+[ext_resource type="Texture2D" uid="uid://dlrlbhaq4hcmg" path="res://Sprites/Assets/ClockOrb.png" id="4_kdf8x"]
+[ext_resource type="Texture2D" uid="uid://doh4oxm2nmo8p" path="res://Sprites/HitZoneSprite.png" id="5_1d8k4"]
+[ext_resource type="AudioStream" uid="uid://c5d7fhbl8pnf8" path="res://Sprites/Assets/Interface Sounds/confirmation_001.ogg" id="7_83q0l"]
+[ext_resource type="AudioStream" uid="uid://bmqfglew0o4ow" path="res://Sprites/Assets/Interface Sounds/scratch_004.ogg" id="7_cu8u2"]
+[ext_resource type="AudioStream" uid="uid://b42lhelfhx0qo" path="res://Sprites/Assets/Interface Sounds/confirmation_004.ogg" id="8_ee1gh"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i6piv"]
 
@@ -17,19 +18,43 @@ radius = 240.0
 [node name="Clock" type="Area2D"]
 script = ExtResource("1_jlktk")
 
+[node name="BackGround" type="Sprite2D" parent="."]
+position = Vector2(0, 20)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_ning0")
+
+[node name="ClockSPrite" type="Sprite2D" parent="."]
+position = Vector2(8, 15.94)
+scale = Vector2(0.6, 0.614926)
+texture = ExtResource("4_kdf8x")
+
 [node name="HitHolder" type="Node2D" parent="."]
 
 [node name="Hitzones" type="Node2D" parent="HitHolder"]
 
 [node name="Inner" parent="HitHolder/Hitzones" instance=ExtResource("1_5qqk5")]
 unique_name_in_owner = true
-position = Vector2(0, 80)
+position = Vector2(0, 117)
+
+[node name="Sprite2D" type="Sprite2D" parent="HitHolder/Hitzones"]
+position = Vector2(0.999999, 41)
+rotation = 3.70279
+scale = Vector2(0.5, 0.5)
+skew = 0.436332
+texture = ExtResource("5_1d8k4")
 
 [node name="Hitzones2" type="Node2D" parent="HitHolder"]
 
 [node name="Mid" parent="HitHolder/Hitzones2" instance=ExtResource("1_5qqk5")]
 unique_name_in_owner = true
-position = Vector2(0, 160)
+position = Vector2(1, 176)
+
+[node name="Sprite2D" type="Sprite2D" parent="HitHolder/Hitzones2"]
+position = Vector2(3, 91)
+rotation = 3.63138
+scale = Vector2(0.581504, 0.599254)
+skew = 0.610865
+texture = ExtResource("5_1d8k4")
 
 [node name="Hitzones3" type="Node2D" parent="HitHolder"]
 
@@ -37,25 +62,27 @@ position = Vector2(0, 160)
 unique_name_in_owner = true
 position = Vector2(0, 240)
 
+[node name="Sprite2D" type="Sprite2D" parent="HitHolder/Hitzones3"]
+position = Vector2(0.99999, 155)
+rotation = 3.58169
+scale = Vector2(0.7, 0.7)
+skew = 0.698132
+texture = ExtResource("5_1d8k4")
+
 [node name="Arms" parent="." instance=ExtResource("2_86yty")]
 
-[node name="TestZone" type="Area2D" parent="."]
-visible = false
-position = Vector2(5, 266)
-script = ExtResource("3_71tfd")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TestZone"]
-position = Vector2(-8, -67)
-shape = SubResource("RectangleShape2D_iltv7")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-scale = Vector2(1.2119, 1.26828)
-texture = ExtResource("4_8d2lb")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 material = SubResource("CanvasItemMaterial_i6piv")
 shape = SubResource("CircleShape2D_bqomr")
 
-[connection signal="area_entered" from="TestZone" to="TestZone" method="_on_area_entered"]
-[connection signal="body_entered" from="TestZone" to="TestZone" method="_on_body_entered"]
+[node name="GoodHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_83q0l")
+
+[node name="PerfHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_ee1gh")
+
+[node name="Miss" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_cu8u2")
+
+[node name="Whien" type="AudioStreamPlayer2D" parent="."]

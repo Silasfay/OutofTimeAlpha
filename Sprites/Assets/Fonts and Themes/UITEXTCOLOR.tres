@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://0iwk6otdmws5"]
+
+[ext_resource type="FontFile" uid="uid://dop2n4cwrfjpv" path="res://Sprites/Assets/Fonts and Themes/Proc2.ttf" id="1_xyhvo"]
+
+[resource]
+default_font = ExtResource("1_xyhvo")
+default_font_size = 40

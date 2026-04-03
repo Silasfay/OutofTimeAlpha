@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dic7nd0jihaek"]
+[gd_scene load_steps=5 format=3 uid="uid://dic7nd0jihaek"]
 
 [ext_resource type="Texture2D" uid="uid://d283cg0pyye3j" path="res://Sprites/Assets/Keyboard & Mouse/Default/keyboard_arrow_down_outline.png" id="1_o2ixp"]
-[ext_resource type="Script" path="res://Scenes/button_sequence.gd" id="1_y4i87"]
+[ext_resource type="Script" path="res://Scripts/button_sequence.gd" id="1_y4i87"]
+[ext_resource type="FontFile" uid="uid://dop2n4cwrfjpv" path="res://Sprites/Assets/Fonts and Themes/Proc2.ttf" id="3_k2rc7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qflju"]
 border_width_left = 5
@@ -95,6 +96,7 @@ offset_right = 909.0
 offset_bottom = 262.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_k2rc7")
 theme_override_font_sizes/font_size = 70
 
 [node name="SuccessLabel" type="Label" parent="."]
@@ -105,6 +107,7 @@ offset_right = 779.0
 offset_bottom = 212.0
 rotation = 0.132645
 theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_k2rc7")
 theme_override_font_sizes/font_size = 100
 text = "Time Lost"
 
